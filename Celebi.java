@@ -2,7 +2,7 @@
 
 public class Celebi extends Pokemon{
     public Celebi(String name){
-        super(name, 600);
+        super(name, 600, 70);
     }
 
     public void attack(Pokemon enemy){

@@ -2,7 +2,7 @@
 
 public class Charizard extends Pokemon{
     public Charizard(String name){
-        super(name, 200);
+        super(name, 200, 60);
     }
 
     public void attack(Pokemon enemy){

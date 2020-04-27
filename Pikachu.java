@@ -2,12 +2,12 @@
 
 public class Pikachu extends Pokemon{
     public Pikachu(String name){
-        super(name, 2000);
+        super(name, 2000, 100);
   
     }
 
-    public Pikachu(String name, int maxHp){
-        super(name, maxHp);
+    public Pikachu(String name, int maxHp,int maxSp){
+        super(name, maxHp, maxSp);
     }
 
     public void attack(Pokemon enemy){

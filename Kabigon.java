@@ -2,7 +2,7 @@
 
 public class Kabigon extends Pokemon{
     public Kabigon(String name){
-        super(name, 1000);
+        super(name, 1000, 50);
     }
 
     public void attack(Pokemon enemy){

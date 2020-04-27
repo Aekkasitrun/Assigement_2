@@ -2,7 +2,7 @@
 
 public class Raichu extends Pikachu{
     public Raichu(String name){
-        super(name, 500);
+        super(name, 500, 80);
     }
 
     public void attack(Pokemon enemy){

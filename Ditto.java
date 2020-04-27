@@ -2,7 +2,7 @@
 
 public class Ditto extends Pokemon{
     public Ditto(String name){
-        super(name, 10);
+        super(name, 10, 50);
     }
 
     public void attack(Pokemon enemy){

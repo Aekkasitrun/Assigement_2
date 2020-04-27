@@ -2,7 +2,7 @@
 
 public class Gardivoir extends Pokemon{
     public Gardivoir(String name){
-        super(name, 300);
+        super(name, 300, 30);
     }
 
     public void attack(Pokemon enemy){

@@ -2,7 +2,7 @@
 
 public class Eevee extends Pokemon{
     public Eevee(String name){
-        super(name, 500);
+        super(name, 500, 40);
     }
 
     public void attack(Pokemon enemy){

@@ -16,11 +16,12 @@ public class MainGame extends JFrame{
         JLabel pokemonName = new JLabel();
         
         JButton firstPokemon = new JButton(trainer.getBag().get(0).getName() + " Status");
-        
+        JButton catchPokemon = new JButton("Catch Pokemon");
         
         c.add(trainerNameLabel);
         c.add(pokemonName);
         c.add(firstPokemon);
+        c.add(catchPokemon);
         
 
         c.setLayout(new BoxLayout(c, BoxLayout.Y_AXIS));

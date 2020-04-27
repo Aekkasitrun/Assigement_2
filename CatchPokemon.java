@@ -2,9 +2,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class PokemonStatus extends JFrame{
-    Pokemon pokemon;
-    public PokemonStatus(Pokemon pokemon){
+public class CatchPokemon extends JFrame{
+    PokemonRandomizer pokemon;
+    public CatchPokemon(PokemonRandomizer pokemon){
         super("Pokemon Status: " + pokemon.getName());
        
         this.pokemon = pokemon;
@@ -13,18 +13,18 @@ public class PokemonStatus extends JFrame{
         
        // java.awt.Container c = getContentPane();
         JLabel name = new JLabel(pokemon.getName());
-        JLabel hp = new JLabel("HP: " + pokemon.getHp());
-        JLabel sp = new JLabel("SP: " + pokemon.getSp());
+       // JLabel hp = new JLabel("HP: " + pokemon.getHp());
+        //JLabel sp = new JLabel("SP: " + pokemon.getSp());
 
         
-       hp.setBounds(0, 0, 50, 50);
-       sp.setBounds(0, 20, 50, 50);
+        name.setBounds(0, 0, 50, 50);
+       //sp.setBounds(0, 20, 50, 50);
        //hp.setLocation(200, 100);
         //sp.setLocation(300, 200);
         
         getContentPane().add(name);
-        getContentPane().add(hp);
-        getContentPane().add(sp);
+     //   getContentPane().add(hp);
+      //  getContentPane().add(sp);
         
         //c.add(name);
         //c.add(hp);
