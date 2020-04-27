@@ -38,5 +38,6 @@ public class PokemonRandomizer{
 
 	public String getName() {
 		return null;
-	}
+    }
+    
 }

@@ -4,6 +4,7 @@ public class Trainer{
     private ArrayList<Pokemon> bag;
     private Scanner sc;
     private String name;
+    private String pokemonName;
 
     public Trainer(String name){
         bag = new ArrayList<Pokemon>();
@@ -97,5 +98,8 @@ public class Trainer{
         return bag;
     }
 
+    public String getPokemonName(){
+        return pokemonName;
+    }
 }
 
