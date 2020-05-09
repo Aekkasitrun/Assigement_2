@@ -1,18 +1,20 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.util.*;
 
 public class MainGame extends JFrame{ 
     
     private Trainer trainer;
     private PokemonRandomizer pokemonRandomizer;
-   // private ArrayList<Pokemon> bag;
+    private ArrayList<Pokemon> pokemons;
 
     public MainGame(Trainer trainer){
         super("Pokemon Game");
         
         this.trainer = trainer;
         this.pokemonRandomizer = pokemonRandomizer;
+        this.pokemons = pokemons;
        
         Container c = getContentPane();
         JLabel trainerNameLabel = new JLabel(this.trainer.getName());
@@ -48,7 +50,7 @@ public class MainGame extends JFrame{
         catchPokemon.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
                 //PokemonStatus ps = new PokemonStatus(trainer.getBag().get(0));
-               // CatchPokemon cp = new CatchPokemon(pokemonRandomizer);
+               CatchPokemon cp = new CatchPokemon(pokemonRandomizer);
             }
         });
 

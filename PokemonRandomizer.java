@@ -3,7 +3,7 @@ public class PokemonRandomizer{
     
     public static ArrayList<Pokemon> getPokemons(int num){
         ArrayList<Pokemon> pokemons = new ArrayList<Pokemon>();
-        if(num < 1){
+        if(num == 0){
             return pokemons;
         }
         
@@ -36,8 +36,8 @@ public class PokemonRandomizer{
         return pokemons;
     }
 
-	public String getName() {
+	/*public String getName() {
 		return null;
-    }
+    }*/
     
 }

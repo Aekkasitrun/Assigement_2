@@ -3,31 +3,24 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class CatchPokemon extends JFrame{
-    Pokemon pokemon;
-    public CatchPokemon(Pokemon pokemon){
+    PokemonRandomizer pokemon;
+    public CatchPokemon(PokemonRandomizer pokemon){
         super("Catch Pokemon");
         
-        
+        String pName = "Current Wild Pokemon";
+
         this.pokemon = pokemon;
-        JLabel name = new JLabel(pokemon.getName());
-        //JLabel hp = new JLabel("HP: " + pokemon.getHp());
-        //JLabel sp = new JLabel("SP: " + pokemon.getSp());
+        JLabel name;
+        JLabel pokemonName = new JLabel();
+        pokemonName.setText(pName);
+        
 
         
-       name.setBounds(0, 0, 50, 50);
-       //sp.setBounds(0, 20, 50, 50);
-       //hp.setLocation(200, 100);
-        //sp.setLocation(300, 200);
-        
-        getContentPane().add(name);
-        //getContentPane().add(hp);
-        //getContentPane().add(sp);
         
         
         
         
-        
-        setSize(400, 200);
+        setSize(600, 400);
         setVisible(true);
     }
 }

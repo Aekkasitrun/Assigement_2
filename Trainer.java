@@ -18,7 +18,7 @@ public class Trainer{
         return this.name;
     }
 
-    public void play(){
+   /* public void play(){
         String cmd = "";
         
         do{
@@ -38,6 +38,7 @@ public class Trainer{
         System.out.println("Catch Pokemons");
         ArrayList<Pokemon> pokemons = PokemonRandomizer.getPokemons(5);
         
+
         System.out.println("\n\nPokemon around you");
         int no = 0;
         printPokemon(pokemons);
@@ -83,7 +84,7 @@ public class Trainer{
 
         sc.nextLine();
 
-    }
+    }*/
 
     public void printPokemon(ArrayList<Pokemon> pokemons){
       //  System.out.println("Pokemon in bag");
@@ -98,8 +99,8 @@ public class Trainer{
         return bag;
     }
 
-    public String getPokemonName(){
-        return pokemonName;
-    }
+    /*public String getPokemonName(){
+        
+    }*/
 }
 
